@@ -12,8 +12,7 @@
             <div class="row m-3">
                 <div class="col">
 
-                    <h1 class="display-5 text-center" style="color:deepskyblue">Lista de Personas <i
-                            class="fas fa-book"></i></h1>
+                    <h1 class="display-5 text-center" style="color:deepskyblue">Lista de Personas <i class="fas fa-users"></i></h1>
                     <div class="container">
                         <div class="row m-3">
                             <div class="col-sm-3"><a href="{{ route('mostrar.crear') }}"

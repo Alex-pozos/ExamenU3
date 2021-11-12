@@ -43,7 +43,7 @@
                             <small style="color:whitesmoke">Selecione su sexo</small>
                         </div>
                         <div class="form-group m-1">
-                            <input type="number" class="form-control" id="edad" name="edad" value="8" readonly>
+                            <input type="number" class="form-control" id="edad" name="edad" value="0" readonly>
                             <small style="color:whitesmoke">Edad</small>
                         </div>
                         <br>

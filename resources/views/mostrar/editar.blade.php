@@ -44,6 +44,15 @@
                             </select>
                             <small style="color:whitesmoke">Selecione su sexo</small>
                         </div>
+                        <div class="form-group m-1">
+                            <input type="number" class="form-control" id="edad" name="edad" value="<?php
+                            $fecha_de_nacimiento = new DateTime($persona['fecha_de_nacimiento']);
+                            $hoy = new DateTime();
+                            $edad = $hoy->diff($fecha_de_nacimiento);
+                            echo $edad->y;
+                            ?>" readonly>
+                            <small style="color:whitesmoke">Edad</small>
+                        </div>
                         <br>
                         <div class="row">
                             <div class="col-sm-6">

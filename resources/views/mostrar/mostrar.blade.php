@@ -25,7 +25,12 @@
                             <p class="lead">Apellido Materno: {{$persona->apellido_materno}}</p>
                             <p class="lead">Fecha de Nacimiento: {{ $persona->fecha_de_nacimiento }}</p>
                             <p class="lead">Sexo: {{ $persona->sexo }}</p>
-                            <p class="lead">Edad: {{ $persona->edad }}</p>
+                            <p class="lead">Edad: <?php
+                                $fecha_de_nacimiento = new DateTime($persona['fecha_de_nacimiento']);
+                                $hoy = new DateTime();
+                                $edad = $hoy->diff($fecha_de_nacimiento);
+                                echo $edad->y;
+                                ?></p>
                             <a href="/" class="btn btn-primary"><i class="fas fa-chevron-left"></i> Regresar a libros</a>
                         </div>
                     </div>

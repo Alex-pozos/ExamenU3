@@ -1,0 +1,9 @@
+.clase_table {
+   border-collapse: separate;
+   border-spacing: 10;
+   border: 1px solid black;
+   border-radius: 15px;
+   -moz-border-radius: 20px;
+   padding: 2px;
+   background: rgb(42, 3, 92);
+}
